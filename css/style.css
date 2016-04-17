@@ -1,0 +1,155 @@
+*{
+	box-sizing: border-box;
+}
+
+
+html, body{
+	background-image: url(../img/background.jpg);
+	background-size: 100%
+
+	/*background-color: black;*/
+	font-family: Arial;
+	/*font-weight: */
+	font-size: 12px;
+}
+
+body{
+	margin-top: 5rem;
+}
+
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+button{
+	background-color: #ccc;
+	color: white;
+	border: 1px solid #ccc;
+	padding: 1rem;
+	border-radius: 5px;
+	transition: .5s ease-in all;
+	cursor: pointer;
+}
+
+.btn-blue{
+	background-color: #0D95FF;
+}
+
+.btn-blue:hover{
+	background-color: #042A7D;
+	/*font-size: 1.5rem;*/
+}
+
+
+.poster-wrapper{
+		width: 32%;
+		height:auto;
+		padding: 10px;
+		display: inline-block;
+		color: white;
+		text-align: left;
+		transition: .3s linear padding;
+		position: relative;
+	}
+
+.poster-wrapper h2{
+	color: #f0f0f0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.poster-wrapper:hover{
+	padding: 0px;
+	
+}
+
+.poster-wrapper img{
+	opacity: .8;
+	transition: .5s ease-in opacity;
+	border: 1px solid white;
+}
+
+.poster-wrapper img:hover{
+	opacity: 1;
+
+}
+
+.poster-selection{
+	text-align: center;
+}
+
+img{
+	/*width: 400px;*/
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li{
+	display: inline-block;
+	color: white;
+	font-size: 1rem;
+	border: 1px solid white;
+	padding: 1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	/*border-radius: 5px;*/
+	cursor: pointer;
+	transition: .3s linear background-color, .3s linear all;
+}
+
+nav ul li:hover	{
+	background-color: #666;
+
+}
+
+nav{
+	background-color: #3C51FF;
+	padding: 10px;
+	text-align: right;
+	position: fixed;
+	width:100%;
+	top: 0;
+	z-index: 1;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;	
+}
+
+th, td{
+	border: 1px solid white;
+	color: white;
+	padding: 1rem;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer{
+	background-color: #333;
+	text-align: center;
+	padding: 2rem;
+}
+
+footer ul{
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li{
+	display: inline-block;
+	color: white;
+	margin: 0 1rem;
+	cursor: pointer;
+}
