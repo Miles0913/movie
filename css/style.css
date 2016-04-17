@@ -1,3 +1,10 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Chewy.ttf);
+}
+
+
+
 *{
 	box-sizing: border-box;
 }
@@ -8,7 +15,7 @@ html, body{
 	background-size: 100%
 
 	/*background-color: black;*/
-	font-family: Arial;
+	font-family: Lobster, Helvetica;
 	/*font-weight: */
 	font-size: 12px;
 }
@@ -19,9 +26,15 @@ body{
 
 
 h1 {
+	
+	font-family: 'myFirstFont', cursive;
 	text-align: center;
 	color: white;
 	margin-top: 9rem;
+}
+
+.movie-logo{
+	margin-right: 1rem;
 }
 
 button{
@@ -30,8 +43,20 @@ button{
 	border: 1px solid #ccc;
 	padding: 1rem;
 	border-radius: 5px;
-	transition: .5s ease-in all;
+	transition: .5s ease-in background-color;
 	cursor: pointer;
+}
+
+
+
+input, select, textarea, button[type="submit"]{
+	font-size: 1.25rem;
+	padding: 1rem;
+	border-radius: 5px;
+	border:1px solid #ccc;
+	margin-bottom: 1rem;
+/*	width: 50%;*/
+	min-width: 400px;
 }
 
 .btn-blue{
@@ -103,7 +128,7 @@ nav ul li{
 	margin-right: 1rem;
 	/*border-radius: 5px;*/
 	cursor: pointer;
-	transition: .3s linear background-color, .3s linear all;
+	transition: .3s linear background-color;
 }
 
 nav ul li:hover	{
@@ -112,7 +137,7 @@ nav ul li:hover	{
 }
 
 nav{
-	background-color: #3C51FF;
+	background-color: #444347;
 	padding: 10px;
 	text-align: right;
 	position: fixed;
@@ -137,6 +162,34 @@ table {
 	margin-right: auto;
 }
 
+.contact-selection{
+	color: white;
+	text-align: left;
+	margin-right: 150px;
+	margin-left:  150px;
+}
+
+.content-wrapper img{
+	width: 20%;
+	opacity: .8;
+	border: 1px solid white;
+	/*position: justify;*/
+}
+
+.content-wrapper *{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*.content-selection{
+	text-align: right;
+}*/
+
+.content-p{
+	display: inline-block;
+	vertical-align: top;
+}
+
 footer{
 	background-color: #333;
 	text-align: center;
@@ -153,4 +206,8 @@ footer ul li{
 	color: white;
 	margin: 0 1rem;
 	cursor: pointer;
+}
+
+.contact-form{
+	text-align: center;
 }
