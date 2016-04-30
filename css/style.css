@@ -49,14 +49,22 @@ button{
 
 
 
-input, select, textarea, button[type="submit"]{
+
+
+/*input, select, textarea, button[type="submit"]{
 	font-size: 1.25rem;
 	padding: 1rem;
 	border-radius: 5px;
 	border:1px solid #ccc;
 	margin-bottom: 1rem;
-/*	width: 50%;*/
 	min-width: 400px;
+}*/
+
+.contact-form{
+	min-width: 400px;
+	width: 40px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .btn-blue{
